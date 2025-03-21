@@ -13,6 +13,7 @@ func writeToFile(titles map[string]bool) error {
 		titlesList = append(titlesList, title)
 	}
 
+	// todo: move struct to a type definition
 	data := struct {
 		Timestamp string   `json:"timestamp"`
 		Source    string   `json:"source"`
